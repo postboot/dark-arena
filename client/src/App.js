@@ -1,18 +1,21 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
 import "./App.css";
+import Jumbo from "./Components/Jumbo";
+import YesButton from "./Components/YesButton";
+import NoButton from "./Components/NoButton";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div>
+        <div className="container">
+          <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Darka.jpg" alt="logo" />
           <h2>Welcome to Colosseum of Softlit Areas</h2>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Jumbo/>
+        <YesButton/>
+        <NoButton/>
       </div>
     );
   }
